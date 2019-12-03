@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "user1",
+      "password": "abcde",
+      "jwt_token": "abcde"
+    },
+    {
+      "username": "user2",
+      "password": "abcde",
+      "jwt_token": "abcde"
+    },
+    {
+      "username": "user3",
+      "password": "abcde",
+      "jwt_token": "abcde"
+    },
+    {
+      "username": "user4",
+      "password": "abcde",
+      "jwt_token": "abcde"
+    }
+  ]
+}

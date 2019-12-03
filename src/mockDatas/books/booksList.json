@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "A Thanksgiving Dream",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": []
+    },
+    {
+      "id": 1,
+      "title": "The Jungle Flower",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": []
+    },
+    {
+      "id": 2,
+      "title": "The Voices of The Rivers",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": []
+    },
+    {
+      "id": 3,
+      "title": "The Search",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": []
+    }
+  ]
+}
