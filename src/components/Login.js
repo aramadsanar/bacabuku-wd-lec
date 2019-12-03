@@ -35,9 +35,10 @@ function Login() {
     let result = await authApi.login(username, password)
 
     if (result) {
-      localStorage.setItem('user_jwt', result.jwt_token)
+      authApi.setToken(result.jwt_token)
     }
   }
+
   return (
     <Paper className="loginComponent">
       <div className="loginDiv">
