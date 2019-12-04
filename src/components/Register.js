@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CssBaseline, Avatar, Grid } from '@material-ui/core'
+import { CssBaseline, Avatar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { LockOpenOutlined } from '@material-ui/icons'
 import Container from '@material-ui/core/Container'
@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
 
 import authApi from '../dataFetch/authApi'
-import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles(theme => ({
   paper: {

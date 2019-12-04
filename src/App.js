@@ -1,17 +1,14 @@
 import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Login from './components/Login'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import ProtectedRoute from './components/common/ProtectedRoute'
-import Pricing from './components/PageTemplate'
 import PageHeader from './components/common/PageHeader'
 import PageFooter from './components/common/PageFooter'
 import { Container } from '@material-ui/core'
-import { Box } from '@material-ui/core/Box'
-import SignIn from './components/LoginPageTemplate'
 import Register from './components/Register'
 import Logout from './components/Logout'
+import BookItem from './components/common/BookItem'
 
 const Placeholder = ({ text }) => {
   return <h1>{text}</h1>
@@ -51,6 +48,12 @@ function App() {
       <footer>
         <PageFooter />
       </footer>
+      <BookItem
+        bookImage={`${process.env.PUBLIC_URL}/assets/contohbuku.jpeg`}
+        bookTitle="hahahihi"
+        pageCount="345"
+        bookId="1"
+      />
     </React.Fragment>
     // <SignIn />
   )
