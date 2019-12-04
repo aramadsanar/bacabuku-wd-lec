@@ -34,8 +34,10 @@ function App() {
             component={props => <Placeholder text="books list" />}
           />
           <ProtectedRoute
-            path="/book/:id"
-            component={props => <Placeholder text="book item" />}
+            path="/book/:bookId"
+            component={props => (
+              <Placeholder text={`book item ${props.match.params.bookId}`} />
+            )}
           />
           <Route
             path="/not-found"
