@@ -6,7 +6,7 @@
       "pageCount": 10,
       "isbn": "",
       "pages": [],
-      "imageUrl": ""
+      "imageUrl": "/assets/contohbuku.jpeg"
     },
     {
       "id": 1,
@@ -27,6 +27,80 @@
     {
       "id": 3,
       "title": "The Search",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+
+    {
+      "id": 4,
+      "title": "A Thanksgiving Dream",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "The Jungle Flower",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "The Voices of The Rivers",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "The Search",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+
+    {
+      "id": 8,
+      "title": "A Thanksgiving Dream",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "The Jungle Flower",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "The Voices of The Rivers",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "The Search",
+      "pageCount": 10,
+      "isbn": "",
+      "pages": [],
+      "imageUrl": "/assets/contohbuku.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "hahahihi",
       "pageCount": 10,
       "isbn": "",
       "pages": [],

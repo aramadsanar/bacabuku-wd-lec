@@ -4,7 +4,8 @@ import BookItem from './common/BookItem'
 import { List, ThemeProvider, GridList, Container } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
-
+import useDebounce from '../hooks/useDebounce'
+import GridListTile from '@material-ui/core/GridListTile'
 const initialValue = []
 
 const useStyles = makeStyles(theme => {
@@ -27,13 +28,33 @@ const useStyles = makeStyles(theme => {
 
 function BooksList() {
   const classes = useStyles()
-  const [books, updateBooks] = useState(initialValue)
+  const [books, setBooks] = useState(initialValue)
   const [searchQuery, updateSearchQuery] = useState('')
+  const [isSearching, setIsSearching] = useState(false)
+  const debouncedSearchQuery = useDebounce(searchQuery, 500)
+
+  const handleSearchChange = e => {
+    updateSearchQuery(e.target.value)
+  }
 
   useEffect(() => {
-    bookApi.getAllBooks().then(books => updateBooks(books))
+    bookApi.getAllBooks().then(books => setBooks(books))
   }, [])
 
+  useEffect(() => {
+    console.log('qq', debouncedSearchQuery)
+    if (debouncedSearchQuery) {
+      setIsSearching(true)
+
+      //callApi
+      bookApi.findBooksByQuery(debouncedSearchQuery).then(({ data: books }) => {
+        setIsSearching(false)
+        setBooks(books)
+      })
+    } else {
+      setBooks([])
+    }
+  }, [debouncedSearchQuery])
   return (
     <Container fixed className={classes.container}>
       <TextField
@@ -42,10 +63,14 @@ function BooksList() {
         type="search"
         className={classes.textField}
         margin="normal"
+        value={searchQuery}
+        onChange={handleSearchChange}
       />
+
       <GridList cellHeight={160} className={classes.listBox} cols={3}>
         {books.map(book => (
           <BookItem
+            key={`book-${book.id}`}
             bookTitle={book.title}
             bookId={book.id}
             pageCount={book.pageCount}

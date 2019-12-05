@@ -3,6 +3,7 @@ import usersDb from '../mockDatas/user/usersDb.json'
 const JWT_TOKEN = 'JWT_TOKEN'
 
 const login = async (username, password) => {
+  console.log(JSON.stringify(usersDb.users, null, 4))
   return usersDb.users.filter(
     user => user.username === username && user.password === password
   )[0]
@@ -15,6 +16,8 @@ const register = async (username, password) => {
   }
   usersDb.users.push(result)
 
+  console.log(JSON.stringify(usersDb.users, null, 4))
+  alert('hahahihi')
   return result
 }
 const setToken = jwt => localStorage.setItem(JWT_TOKEN, jwt)
