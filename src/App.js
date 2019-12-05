@@ -48,12 +48,6 @@ function App() {
       <footer>
         <PageFooter />
       </footer>
-      <BookItem
-        bookImage={`${process.env.PUBLIC_URL}/assets/contohbuku.jpeg`}
-        bookTitle="hahahihi"
-        pageCount="345"
-        bookId="1"
-      />
     </React.Fragment>
     // <SignIn />
   )
