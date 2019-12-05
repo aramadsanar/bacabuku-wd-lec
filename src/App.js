@@ -9,6 +9,7 @@ import { Container } from '@material-ui/core'
 import Register from './components/Register'
 import Logout from './components/Logout'
 import BookItem from './components/common/BookItem'
+import BooksList from './components/BooksList'
 
 const Placeholder = ({ text }) => {
   return <h1>{text}</h1>
@@ -29,10 +30,7 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/logout" component={Logout} />
-          <ProtectedRoute
-            path="/books"
-            component={props => <Placeholder text="books list" />}
-          />
+          <ProtectedRoute path="/books" component={BooksList} />
           <ProtectedRoute
             path="/book/:bookId"
             component={props => (

@@ -4,11 +4,11 @@ const findBookById = id => {
   return { data: booksList.data.filter(book => book.id === id)[0] }
 }
 
-const getAllBooks = () => {
-  return booksList
+const getAllBooks = async () => {
+  return booksList.data
 }
 
-module.exports = {
+export default {
   findBookById,
   getAllBooks
 }
