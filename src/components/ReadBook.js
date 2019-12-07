@@ -7,37 +7,14 @@ import { makeStyles } from '@material-ui/core/styles'
 import { SizeMe } from 'react-sizeme'
 import Button from '@material-ui/core/Button'
 import zIndex from '@material-ui/core/styles/zIndex'
-
+import sty from '../styles/ReadBook.css'
 const useStyles = makeStyles(theme => ({
   titleText: {
     ...theme.typography.button,
     backgroundColor: theme.palette.background.paper
   },
   readingArea: {
-    margin: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column'
-  },
-  prevButton: {
-    margin: '16dp',
-    float: 'left'
-  },
-  nextButton: {
-    margin: '16dp',
-    float: 'right'
-  },
-  buttonArea: {
-    right: '1em',
-    top: 'auto',
-    position: 'absolute'
-  },
-  pageFragment: {
-    position: 'relative'
-  },
-  resource: {
-    position: 'relative',
-    overflow: 'hidden',
-    textAlign: 'center'
+    margin: theme.spacing(8)
   }
 }))
 
@@ -75,25 +52,7 @@ function ReadBook(props) {
     <div fixed className={classes.readingArea}>
       <Typography className={classes.titleText}>{bookData.title}</Typography>
       {bookData.pdfUrl ? (
-        <React.Fragment>
-          <div>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.prevButton}
-              onClick={goToPrevPage}
-            >
-              PREV
-            </Button>
-            <Button
-              variant="contained"
-              color="primary"
-              className={classes.nextButton}
-              onClick={goToNextPage}
-            >
-              NEXT
-            </Button>
-          </div>
+        <div className="pdfReader">
           <SizeMe
             monitorHeight
             monitorWidth
@@ -115,7 +74,25 @@ function ReadBook(props) {
               </div>
             )}
           />
-        </React.Fragment>
+          <div className="pdfControlOverlay">
+            <Button
+              variant="contained"
+              color="primary"
+              className="prevButton"
+              onClick={goToPrevPage}
+            >
+              {'<'}
+            </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              className="nextButton"
+              onClick={goToNextPage}
+            >
+              {'>'}
+            </Button>
+          </div>
+        </div>
       ) : (
         <CircularProgress color="secondary" />
       )}

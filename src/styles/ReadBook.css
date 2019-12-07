@@ -1,0 +1,22 @@
+.pdfReader {
+  position: relative;
+}
+
+.pdfControlOverlay {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+.prevButton {
+  position: absolute;
+  left: 0;
+}
+.nextButton {
+  position: absolute;
+  right: 0;
+}
