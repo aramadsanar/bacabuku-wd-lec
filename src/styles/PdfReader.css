@@ -21,3 +21,7 @@
   position: absolute;
   right: 0;
 }
+
+.pdfReadProgressIndicator {
+  text-align: center;
+}
