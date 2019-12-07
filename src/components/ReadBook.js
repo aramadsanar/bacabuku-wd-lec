@@ -6,6 +6,7 @@ import bookApi from '../dataFetch/bookApi'
 import { makeStyles } from '@material-ui/core/styles'
 import { SizeMe } from 'react-sizeme'
 import Button from '@material-ui/core/Button'
+import zIndex from '@material-ui/core/styles/zIndex'
 
 const useStyles = makeStyles(theme => ({
   titleText: {
@@ -26,7 +27,17 @@ const useStyles = makeStyles(theme => ({
     float: 'right'
   },
   buttonArea: {
-    display: 'flex'
+    right: '1em',
+    top: 'auto',
+    position: 'absolute'
+  },
+  pageFragment: {
+    position: 'relative'
+  },
+  resource: {
+    position: 'relative',
+    overflow: 'hidden',
+    textAlign: 'center'
   }
 }))
 
@@ -64,8 +75,8 @@ function ReadBook(props) {
     <div fixed className={classes.readingArea}>
       <Typography className={classes.titleText}>{bookData.title}</Typography>
       {bookData.pdfUrl ? (
-        <React.Fragment className={classes.readingArea}>
-          <div className={classes.buttonArea}>
+        <React.Fragment>
+          <div>
             <Button
               variant="contained"
               color="primary"
