@@ -15,13 +15,27 @@ function PdfReader({ url }) {
   }
 
   const goToNextPage = () => {
-    setReadState(p => {
-      return { ...p, pageNumber: p.pageNumber + 1 }
+    setReadState(({ pageNumber, numPages }) => {
+      let nextPageNumber = 0
+      if (pageNumber >= numPages) {
+        nextPageNumber = numPages
+      } else {
+        nextPageNumber = pageNumber + 1
+      }
+
+      return { numPages, pageNumber: nextPageNumber }
     })
   }
   const goToPrevPage = () => {
-    setReadState(p => {
-      return { ...p, pageNumber: p.pageNumber - 1 }
+    setReadState(({ pageNumber, numPages }) => {
+      let prevPageNumber = 0
+      if (pageNumber <= 1) {
+        prevPageNumber = 1
+      } else {
+        prevPageNumber = pageNumber - 1
+      }
+
+      return { numPages, pageNumber: prevPageNumber }
     })
   }
   return (
