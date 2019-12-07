@@ -70,7 +70,9 @@ function PageHeader() {
           noWrap
           className={classes.toolbarTitle}
         >
-          <a href="/">Bacabuku</a>
+          <a href="/" class="appTitleLink">
+            Bacabuku
+          </a>
         </Typography>
         {authApi.getToken() ? logoutButton : loginButton}
       </Toolbar>
