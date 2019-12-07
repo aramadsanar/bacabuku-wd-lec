@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import authApi from '../../dataFetch/authApi'
+import style from '../../styles/PageHeader.css'
 
 const useStyles = makeStyles(theme => ({
   '@global': {
@@ -69,7 +70,7 @@ function PageHeader() {
           noWrap
           className={classes.toolbarTitle}
         >
-          Bacabuku
+          <a href="/">Bacabuku</a>
         </Typography>
         {authApi.getToken() ? logoutButton : loginButton}
       </Toolbar>
