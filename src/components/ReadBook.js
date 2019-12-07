@@ -49,7 +49,7 @@ function ReadBook(props) {
     })
   }
   return (
-    <div fixed className={classes.readingArea}>
+    <div>
       <Typography className={classes.titleText}>{bookData.title}</Typography>
       {bookData.pdfUrl ? (
         <div className="pdfReader">
