@@ -74,7 +74,7 @@ function BooksList() {
             bookTitle={book.title}
             bookId={book.id}
             pageCount={book.pageCount}
-            bookImage={`${process.env.PUBLIC_URL}${book.imageUrl}`}
+            bookImage={book.imageUrl}
           />
         ))}
       </GridList>

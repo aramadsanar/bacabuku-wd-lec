@@ -2,109 +2,35 @@
   "data": [
     {
       "id": 0,
-      "title": "A Thanksgiving Dream",
-      "pageCount": 10,
+      "title": "Elements of Programming Interviews in Python",
+      "pageCount": 432,
       "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
+      "pdfUrl": "/epip.pdf",
+      "imageUrl": "/epip.jpg"
     },
     {
       "id": 1,
-      "title": "The Jungle Flower",
+      "title": "Cracking the Coding Interview",
       "pageCount": 10,
       "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
+      "pdfUrl": "/ctci.pdf",
+      "imageUrl": "/ctci.jpg"
     },
     {
       "id": 2,
-      "title": "The Voices of The Rivers",
-      "pageCount": 10,
+      "title": "Code Complete",
+      "pageCount": 912,
       "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
+      "pdfUrl": "/cc.pdf",
+      "imageUrl": "/cc.jpg"
     },
     {
       "id": 3,
-      "title": "The Search",
-      "pageCount": 10,
+      "title": "Head First Android",
+      "pageCount": 930,
       "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-
-    {
-      "id": 4,
-      "title": "A Thanksgiving Dream",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 5,
-      "title": "The Jungle Flower",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 6,
-      "title": "The Voices of The Rivers",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 7,
-      "title": "The Search",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-
-    {
-      "id": 8,
-      "title": "A Thanksgiving Dream",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 9,
-      "title": "The Jungle Flower",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 10,
-      "title": "The Voices of The Rivers",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 11,
-      "title": "The Search",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
-    },
-    {
-      "id": 12,
-      "title": "hahahihi",
-      "pageCount": 10,
-      "isbn": "",
-      "pages": [],
-      "imageUrl": "/assets/contohbuku.jpeg"
+      "pdfUrl": "/hfa.pdf",
+      "imageUrl": "/hfa.jpg"
     }
   ]
 }

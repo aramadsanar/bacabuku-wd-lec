@@ -10,6 +10,7 @@ import Register from './components/Register'
 import Logout from './components/Logout'
 import BookItem from './components/common/BookItem'
 import BooksList from './components/BooksList'
+import ReadBook from './components/ReadBook'
 
 const Placeholder = ({ text }) => {
   return <h1>{text}</h1>
@@ -21,34 +22,28 @@ const styles = {
 
 function App() {
   return (
-    <React.Fragment>
+    <div>
       <header>
         <PageHeader />
       </header>
-      <Container className="container" style={styles}>
-        <Switch>
-          <Route path="/register" component={Register} />
-          <Route path="/login" component={Login} />
-          <Route path="/logout" component={Logout} />
-          <ProtectedRoute path="/books" component={BooksList} />
-          <ProtectedRoute
-            path="/book/:bookId"
-            component={props => (
-              <Placeholder text={`book item ${props.match.params.bookId}`} />
-            )}
-          />
-          <Route
-            path="/not-found"
-            component={props => <Placeholder text="not found 404" />}
-          />
-          <Redirect from="/" exact to="/login" />
-          <Redirect to="/not-found" />
-        </Switch>
-      </Container>
+
+      <Switch>
+        <Route path="/register" component={Register} />
+        <Route path="/login" component={Login} />
+        <Route path="/logout" component={Logout} />
+        <ProtectedRoute path="/books" component={BooksList} />
+        <ProtectedRoute path="/book/:bookId" component={ReadBook} />
+        <Route
+          path="/not-found"
+          component={props => <Placeholder text="not found 404" />}
+        />
+        <Redirect from="/" exact to="/login" />
+        <Redirect to="/not-found" />
+      </Switch>
       <footer>
         <PageFooter />
       </footer>
-    </React.Fragment>
+    </div>
     // <SignIn />
   )
 }

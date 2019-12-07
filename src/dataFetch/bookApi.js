@@ -2,7 +2,8 @@ import booksList from '../mockDatas/books/booksList.json'
 import sanitizeRegex from '../utils/regexSanitizer'
 
 const findBookById = async id => {
-  return { data: booksList.data.filter(book => book.id === id)[0] }
+  let result = booksList.data.filter(book => book.id === id)[0]
+  return { data: result }
 }
 
 const getAllBooks = async () => {
