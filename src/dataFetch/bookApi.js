@@ -13,6 +13,11 @@ const getAllBooks = async () => {
 const findBooksByQuery = async query => {
   query = sanitizeRegex(query)
   let pattern = new RegExp(query, 'ig')
+  if (query === '')
+    return {
+      data: booksList.data
+    }
+
   return {
     data: booksList.data.filter(book => {
       if (book.title.match(pattern)) return book

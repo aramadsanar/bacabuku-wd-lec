@@ -52,7 +52,7 @@ function BooksList() {
         setBooks(books)
       })
     } else {
-      setBooks([])
+      bookApi.getAllBooks().then(books => setBooks(books))
     }
   }, [debouncedSearchQuery])
   return (
