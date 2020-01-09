@@ -2,35 +2,35 @@
   "data": [
     {
       "id": 0,
-      "title": "Elements of Programming Interviews in Python",
-      "pageCount": 432,
+      "title": "Dummy Book 1",
+      "pageCount": 1,
       "isbn": "",
-      "pdfUrl": "/epip.pdf",
-      "imageUrl": "/epip.jpg"
+      "pdfUrl": "/dummy.pdf",
+      "imageUrl": "/dummy.png"
     },
     {
       "id": 1,
-      "title": "Cracking the Coding Interview",
-      "pageCount": 10,
+      "title": "Dummy Book 2",
+      "pageCount": 2,
       "isbn": "",
-      "pdfUrl": "/ctci.pdf",
-      "imageUrl": "/ctci.jpg"
+      "pdfUrl": "/dummy2.pdf",
+      "imageUrl": "/dummy2.png"
     },
     {
       "id": 2,
-      "title": "Code Complete",
-      "pageCount": 912,
+      "title": "Dummy Book 3",
+      "pageCount": 3,
       "isbn": "",
-      "pdfUrl": "/cc.pdf",
-      "imageUrl": "/cc.jpg"
+      "pdfUrl": "/dummy3.pdf",
+      "imageUrl": "/dummy3.png"
     },
     {
       "id": 3,
-      "title": "Head First Android",
-      "pageCount": 930,
+      "title": "Dummy Book 4",
+      "pageCount": 4,
       "isbn": "",
-      "pdfUrl": "/hfa.pdf",
-      "imageUrl": "/hfa.jpg"
+      "pdfUrl": "/dummy4.pdf",
+      "imageUrl": "/dummy4.png"
     }
   ]
 }
